@@ -1,0 +1,109 @@
+:root {
+     --black : #1e1e1e;
+     --white: #ffffff;
+     --dark: #2A2B2E;
+     --shadowWhite: rgba(255, 255, 255, 0.16);
+     --shadowBlack: rgba(0, 0, 0, 0.16);
+
+     --foreground: var(--black);
+     --background: var(--white);
+     --clrBlack: var(--black);
+     --shadow: var(--shadowBlack);
+     --buttonBgColor: var(--white);
+
+}
+
+.darkmode {  
+  --black : #1e1e1e;
+  --darkBlack : #1c1212;
+  --white: #ffffff;
+  --dark: #3F3F3F;
+  --shadowWhite: rgba(255, 255,255, 0.16);
+  --shadowBlack: rgba(0, 0, 0, 0.48);
+
+
+  --foreground: var(--white);
+  --background: var(--dark);
+  --clrBlack: var(--black);
+
+  --buttonShadow: var(--black);
+  --buttonBgColor: var(--darkBlack);
+  --buttonColor: var(--white);
+  --fontColor: var(--white);
+  --shadow: var(--shadowBlack);
+
+}
+
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 400px;
+    transition: background 0.2s linear;
+  background: var(--background);
+  color: var(--foreground);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 18px;
+    border: 1px solid #1e1e1e;
+    margin-bottom: 4px;
+}
+
+
+button {
+    background: var(--buttonBgColor);
+    color: var(--foreground);
+    /* background: #1e1e1e;
+    color: #ffffff; */
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow)  0px 1px 4px;
+    border: 1px solid var(--buttonBgColor);
+    /* border: 1px solid #1e1e1e; */
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dark-mode-toggle {
+  position: absolute;
+  z-index: 100;
+  top: 4.3em;
+  left: 29em;
+  color: var(--foreground);
+  border: 2px solid currentColor;
+  padding: 4px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 30px;
+  height:30px;
+}
+
+
+.icon{
+  height: 30px;
+  width: 30px;
+}
+
+
+ul {
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+#a{
+  font: Arial, Helvetica, sans-serif;
+  color: var(--foreground);
+}
+
+li {
+    margin-top: 5px;
+}
+
